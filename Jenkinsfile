@@ -2,6 +2,7 @@ node {
 
    def mvnHome
    stage('Preparation') {
+      checkout scm
       mvnHome = tool 'M3'
    }
    stage('Build') {
